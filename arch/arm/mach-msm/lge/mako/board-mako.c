@@ -1390,10 +1390,10 @@ static struct platform_device msm_tsens_device = {
 
 static struct msm_thermal_data msm_thermal_pdata = {
 	.sensor_id = 0,
-	.poll_ms = 500,
+	.poll_ms = 750,
 	.limit_temp_degC = 75,
 	.temp_hysteresis_degC = 10,
-	.freq_step = 2,
+	.freq_step = 4,
 };
 
 #define MSM_SHARED_RAM_PHYS 0x80000000

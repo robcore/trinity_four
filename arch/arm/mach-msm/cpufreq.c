@@ -27,6 +27,7 @@
 #include <linux/cpumask.h>
 #include <linux/sched.h>
 #include <linux/suspend.h>
+#include <linux/trinity.h>
 #include <mach/socinfo.h>
 #include <mach/cpufreq.h>
 
@@ -252,7 +253,7 @@ EXPORT_SYMBOL(msm_cpufreq_set_freq_limits);
 static int __cpuinit msm_cpufreq_init(struct cpufreq_policy *policy)
 {
 	int cur_freq;
-	int boot_freq = 1458000;
+	int boot_freq = user_policy_max_freq;
 	int index;
 	struct cpufreq_frequency_table *table;
 #ifdef CONFIG_SMP
