@@ -81,16 +81,16 @@ hw_rev_type lge_get_board_revno(void)
 extern int kcal_set_values(int kcal_r, int kcal_g, int kcal_b);
 static int __init display_kcal_setup(char *kcal)
 {
-	char vaild_k = 0;
-	int kcal_r = 0;
-	int kcal_g = 0;
-	int kcal_b = 0;
+	char valid_k = 'K';
+	int kcal_r = 230;
+	int kcal_g = 225;
+	int kcal_b = 240;
 
-	sscanf(kcal, "%d|%d|%d|%c", &kcal_r, &kcal_g, &kcal_b, &vaild_k );
-	pr_info("kcal is %d|%d|%d|%c\n", kcal_r, kcal_g, kcal_b, vaild_k);
+	//sscanf(kcal, "%d|%d|%d|%c", &kcal_r, &kcal_g, &kcal_b, &valid_k );
+	pr_info("kcal is %d|%d|%d|%c\n", kcal_r, kcal_g, kcal_b, valid_k);
 
-	if (vaild_k != 'K') {
-		pr_info("kcal not calibrated yet : %d\n", vaild_k);
+	if (valid_k != 'K') {
+		pr_info("kcal not calibrated yet : %d\n", valid_k);
 		kcal_r = kcal_g = kcal_b = 255;
 		pr_info("set to default : %d\n", kcal_r);
 	}
