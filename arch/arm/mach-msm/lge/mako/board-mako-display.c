@@ -767,7 +767,7 @@ static char p_gamma_b_setting[10] = {0xD4, 0x72, 0x15, 0x76, 0x00, 0x00, 0x00, 0
 static char n_gamma_b_setting[10] = {0xD5, 0x72, 0x15, 0x76, 0x00, 0x00, 0x00, 0x50, 0x30, 0x02};*/
 
 /*
-	PA COLORS
+	PA COLORS -- CONTRASTY
 	as starting point
 */
 
@@ -775,8 +775,8 @@ static char n_gamma_b_setting[10] = {0xD5, 0x72, 0x15, 0x76, 0x00, 0x00, 0x00, 0
 #define g_mids        0x44
 #define g_black       0x76
 #define g_contrast    0x1A
-#define g_brightness  0x02
-#define g_saturation  0x45
+#define g_brightness  0x00
+#define g_saturation  0x48
 #define g_greys       0x0A
 
 static char p_gamma_r_setting[10] = {0xD0, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};

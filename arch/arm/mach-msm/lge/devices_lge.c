@@ -82,9 +82,9 @@ extern int kcal_set_values(int kcal_r, int kcal_g, int kcal_b);
 static int __init display_kcal_setup(char *kcal)
 {
 	char valid_k = 'K';
-	int kcal_r = 230;
-	int kcal_g = 225;
-	int kcal_b = 240;
+	int kcal_r = 245;
+	int kcal_g = 240;
+	int kcal_b = 255;
 
 	//sscanf(kcal, "%d|%d|%d|%c", &kcal_r, &kcal_g, &kcal_b, &valid_k );
 	pr_info("kcal is %d|%d|%d|%c\n", kcal_r, kcal_g, kcal_b, valid_k);
