@@ -12,13 +12,23 @@
 
 #define GAMMACONTROL_VERSION 1
 
-int whites_val = 114;
-int mids_val = 21;
-int blacks_val = 118;
-int contrast_val = 0;
-int brightness_val = 0;
-int saturation_val = 80;
-int greys_val = 48;
+/*
+#define g_white       0x40
+#define g_mids        0x44
+#define g_black       0x76
+#define g_contrast    0x1A
+#define g_brightness  0x00
+#define g_saturation  0x48
+#define g_greys       0x0A
+*/
+
+int whites_val = 50;
+int mids_val = 90;
+int blacks_val = 75;
+int contrast_val = 29;
+int brightness_val = 2;
+int saturation_val = 120;
+int greys_val = 20;
 
 extern void update_vals(int array_pos);
 
