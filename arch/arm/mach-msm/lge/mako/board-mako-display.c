@@ -771,20 +771,20 @@ static char n_gamma_b_setting[10] = {0xD5, 0x72, 0x15, 0x76, 0x00, 0x00, 0x00, 0
 	as starting point
 */
 
-#define g_white       0x40
+#define g_greys       0x40
 #define g_mids        0x44
 #define g_black       0x76
 #define g_contrast    0x1A
 #define g_brightness  0x00
 #define g_saturation  0x48
-#define g_greys       0x0A
+#define g_white       0x0A
 
-static char p_gamma_r_setting[10] = {0xD0, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};
-static char n_gamma_r_setting[10] = {0xD1, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};
-static char p_gamma_g_setting[10] = {0xD2, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};
-static char n_gamma_g_setting[10] = {0xD3, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};
-static char p_gamma_b_setting[10] = {0xD4, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};
-static char n_gamma_b_setting[10] = {0xD5, g_white, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_greys, 0x01};
+static char p_gamma_r_setting[10] = {0xD0, g_greys, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_white, 0x01};
+static char n_gamma_r_setting[10] = {0xD1, g_greys, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_white, 0x01};
+static char p_gamma_g_setting[10] = {0xD2, g_greys, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_white, 0x01};
+static char n_gamma_g_setting[10] = {0xD3, g_greys, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_white, 0x01};
+static char p_gamma_b_setting[10] = {0xD4, g_greys, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_white, 0x01};
+static char n_gamma_b_setting[10] = {0xD5, g_greys, g_mids, g_black, 0x00, g_contrast, g_brightness, g_saturation, g_white, 0x01};
 
 static char ief_on_set0[2] = {0xE0, 0x00};
 static char ief_on_set4[4] = {0xE4, 0x00, 0x00, 0x00};
