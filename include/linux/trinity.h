@@ -12,7 +12,7 @@
 #ifndef __LINUX_TRINITY_H
 #define __LINUX_TRINITY_H
 
-#define TRINITY_BOOT_FREQ 1458000
+#define TRINITY_BOOT_FREQ 1026000
 static int user_policy_max_freq = TRINITY_BOOT_FREQ;
 
 #endif /* __LINUX_TRINITY_H */
