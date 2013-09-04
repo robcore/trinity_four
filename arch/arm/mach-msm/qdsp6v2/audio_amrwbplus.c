@@ -17,7 +17,7 @@
 #include <linux/msm_audio_amrwbplus.h>
 #include "audio_utils_aio.h"
 
-#ifdef CONFIG_DEBUG_FS
+/*#ifdef CONFIG_DEBUG_FS
 static const struct file_operations audio_amrwbplus_debug_fops = {
 	.read = audio_aio_debug_read,
 	.open = audio_aio_debug_open,
@@ -35,11 +35,11 @@ static void config_debug_fs(struct q6audio_aio *audio)
 			pr_debug("debugfs_create_file failed\n");
 	}
 }
-#else
-static void config_debug_fs(struct q6audio_aio *)
+#else*/
+static void config_debug_fs(struct q6audio_aio *audio)
 {
 }
-#endif
+//#endif
 
 static long audio_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 {
